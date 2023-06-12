@@ -4,7 +4,6 @@ pn = int (input ("ingrese la capacidad nominal de los ascensores: ")) #capacidad
 Ar = int (input ("Ingrese el valor del area de ocupacion disponible:"))
 B_i = int (input ("ingrese numero de personas por piso:")) #Numero universal para todos los proyectos.
 B_t= ((B_i * 2 * 45) + (15*3)) #Valor de personas por piso por el factor de ocupacion, sumando los sotanos multiplicado por el numero de personas por sotano.
-print  (B_t , "personas estimadas a utulizar los ascensores.")
 P_vd = (3.2//pn + 0.7*pn + 0.5) #Pasageros por viaje.
 print (P_vd , "personas por viaje")
 P_v = int (input ("Inserte el valor entero de la personas por viaje:"))
@@ -23,7 +22,6 @@ H_s = (H_a - H_e) #Recorrido sobre la planta principal con servicio de ascensore
 print (H_e , "metro recorridos en expreso y ", H_s, "metros recorridos sobre la planta principal." )
 n_p = (n*(1-(((n-1)/n)**P_v))) #Numero de paradas probables.
 print (n_p , "paradas probables")
-print ("tomaremos la entrada libre para los pasageros de 1000mm")
 Q = (((H_s// n_p))**0.5) 
 print (Q ,"valor condicional de la velocidad nominal")
 T_1 = float (input ("Ingrese los valores para el tiempo de recorrido, tomando en cosideracion la tabla 7:"))
