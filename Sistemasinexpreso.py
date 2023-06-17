@@ -15,7 +15,7 @@ print ((H_a , "metros totales recorrido superior"))
 
 print ("dividiendo las atencion por secciones de ascensores antendinedo cierta cantidad de pisos, tenemos")
 n= int (input ("ingrese el numero de pisos a atender por el asensor:"))
-B_t= ((B_i * 2 * n) + (15*Zot)) #Valor de personas por piso por el factor de ocupacion, sumando los sotanos multiplicado por el numero de personas por sotano.
+B_t= ((B_i * n) + (15*Zot)) #Valor de personas por piso por el factor de ocupacion, sumando los sotanos multiplicado por el numero de personas por sotano.
 n_e = (n_a - n) #Total de pisos por atender, restando los atendidos, sin el recorrido expreso.
 B = B_t #n_a va a variar segun sea el piso maximo a donde llegue las ascensores.
 H_e = (n_e * e_p ) #Recorrido total en expreso.
